@@ -25,7 +25,18 @@ Hello Closures!
 Hello Closures!
 ```
 
+```swift
+let closureGreeting = {print("Hello Closures!")}
 
+func applyKTimes(_ K: Int, _ closure: () -> ()) {
+for _ in 0..<K {
+closure()//must use the () when calling the closure, otherwise you will get an error
+}
+}
+
+applyKTimes(3, closureGreeting)
+
+```
 ## Question 2
 
 Use `filter` to create an array called `multiples` that contains all the multiples of 3 from `numbers` and then print it.
@@ -37,7 +48,11 @@ Input: `let numbers = [1, 2, 3, 4, 6, 8, 9, 3, 12, 11]`
 
 Expected values: `multiples = [3, 6, 9, 3, 12]`
 
+```swift
 
+
+
+```
 ## Question 3
 
 Find the largest number from `numbers` and then print it. Use `reduce` to solve this exercise.
@@ -47,7 +62,11 @@ Input: `let numbers = [4, 7, 1, 9, 6, 5, 6, 9]`
 
 Output: `9`
 
+```swift
 
+
+
+```
 ## Question 4
 
 Join all the strings from `strings` into one using `reduce`. Add spaces in between strings. Print your result.
@@ -57,7 +76,11 @@ Input: `let strings = ["We", "Heart", "Swift"]`
 
 Output: `"We Heart Swift"`
 
+```swift
 
+
+
+```
 ## Question 5
 
 `let cities = ["Shanghai", "Beijing", "Delhi", "Lagos", "Tianjin", "Karachi", "Karachi", "Tokyo", "Guangzhou", "Mumbai", "Moscow", "São Paulo"]`
@@ -67,7 +90,11 @@ a. Use `sortedBy` to sort `cities` in alphabetical order.
 b. Use `sortedBy` to sort `cities` alphabetical order of the second character of the city name.
 
 c. Use `sortedBy` to sort `cities` in order of the length of the city name.
+```swift
 
+
+
+```
 
 ## Question 6
 
@@ -76,7 +103,11 @@ c. Use `sortedBy` to sort `cities` in order of the length of the city name.
 a. Use `sortedBy` to sort `citiesWithPopulation` in ascending order of population.
 
 b. Use `sortedBy` to sort `citiesWithPopulation` in reverse alphabetical order of the last character in the city name.
+```swift
 
+
+
+```
 
 ## Question 7
 
@@ -99,7 +130,11 @@ numbers = [1, 2, 3, 5, 4, 6]
 // [1, 5, 2, 3, 4, 6] would also have been a valid solution
 ```
 
+```swift
 
+
+
+```
 ## Question 8
 
 Find the sum of the squares of all the odd numbers from `numbers` and then print it.
@@ -119,7 +154,11 @@ Input: `var numbers = [1, 2, 3, 4, 5, 6]`
 
 Output: `35 // 1 + 9 + 25 -> 35`
 
+```swift
 
+
+
+```
 ## Question 9
 
 Implement a function `forEach(array: [Int], _ closure: Int -> ())` that takes an array of integers and a closure and runs the closure for each element of the array.
@@ -158,7 +197,11 @@ combineArrays(array1,array2) {
 ```
 
 Output: `[5,10,15,12]`
+```swift
 
+
+
+```
 
 ## Question 11
 
@@ -191,7 +234,11 @@ b) ["odd", "even", "odd", "even", "odd", "even", "odd"]
 c) ["one ", "two ", "three ", "four four ", "five five five ", "six six zero zero ", "one zero seven six three "]
 ```
 
+```swift
 
+
+
+```
 ## Question 12
 
 let myArray = [34,42,42,1,3,4,3,2,49]
@@ -209,7 +256,11 @@ b) Sort `myArray` in descending order by defining the constant `descendingOrder`
 let mySecondSortedArray = myArray.sort(descendingOrder)
 let descendingOrder =
 ```
+```swift
 
+
+
+```
 
 ## Question 13
 
@@ -257,10 +308,20 @@ a) Sort the string below in descending order according the dictionary `letterVal
 
 `var codeString = "aldfjaekwjnfaekjnf"`
 
+```swift
+
+
+
+```
+
 b) Sort the string below in ascending order according the dictionary `letterValues`
 
 `var codeStringTwo = "znwemnrfewpiqn"`
+```swift
 
+
+
+```
 ## Question 15
 
 ```swift
@@ -280,7 +341,11 @@ Bach, Johann S.
 Des Prez, Josquin
 ...etc
 ```
+```swift
 
+
+
+```
 ## Question 16
 
 a) Write a function called `myFilter` that takes an array of Doubles and a closure as parameters and returns an array of Doubles. The closure should take a Double and return a Bool. The function should apply the closure to the doubles in the array.
@@ -294,6 +359,8 @@ c) Define a closure assigned to a constant called `wholeNumber` that takes a dou
 d) Define a closure assigned to a constant called `justEven` that takes a double and returns true if the number to the left of the point is even and pass it to `myFilter`.
 
 e. Use the built in filter method on `theDoubles` to recreate the answers for b, c and d.
+
+
 
 Example
 Input:
