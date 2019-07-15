@@ -86,8 +86,18 @@ Output: `"We Heart Swift"`
 `let cities = ["Shanghai", "Beijing", "Delhi", "Lagos", "Tianjin", "Karachi", "Karachi", "Tokyo", "Guangzhou", "Mumbai", "Moscow", "São Paulo"]`
 
 a. Use `sortedBy` to sort `cities` in alphabetical order.
+```swift
+
+
+
+```
 
 b. Use `sortedBy` to sort `cities` alphabetical order of the second character of the city name.
+```swift
+
+
+
+```
 
 c. Use `sortedBy` to sort `cities` in order of the length of the city name.
 ```swift
@@ -101,6 +111,11 @@ c. Use `sortedBy` to sort `cities` in order of the length of the city name.
 `let citiesWithPopulation: [(String, Int)] = [("Shanghai", 24256800), ("Beijing", 21516000), ("Delhi", 16787941), ("Lagos", 16060303), ("Tianjin", 15200000), ("Karachi", 14910352), ("Karachi", 14160467), ("Tokyo", 13513734), ("Guangzhou", 13080500), ("Mumbai", 12442373), ("Moscow", 12380664), ("São Paulo", 12038175)]`
 
 a. Use `sortedBy` to sort `citiesWithPopulation` in ascending order of population.
+```swift
+
+
+
+```
 
 b. Use `sortedBy` to sort `citiesWithPopulation` in reverse alphabetical order of the last character in the city name.
 ```swift
@@ -142,23 +157,36 @@ Find the sum of the squares of all the odd numbers from `numbers` and then print
 `var numbers = [1, 2, 3, 4, 5, 6]`
 
 a. Write code that removes all the odd numbers from the array.
-
-b. Write code that squares all the numbers in the array.
-
-c. Write code that finds the sum of the array.
-
-d. Now use `map`, `filter` and `reduce` to solve this problem.
-
-Example:
-Input: `var numbers = [1, 2, 3, 4, 5, 6]`
-
-Output: `35 // 1 + 9 + 25 -> 35`
-
 ```swift
 
 
 
 ```
+
+b. Write code that squares all the numbers in the array.
+```swift
+
+
+
+```
+c. Write code that finds the sum of the array.
+```swift
+
+
+
+```
+d. Now use `map`, `filter` and `reduce` to solve this problem.
+```swift
+
+
+
+```
+Example:
+Input: `var numbers = [1, 2, 3, 4, 5, 6]`
+
+Output: `35 // 1 + 9 + 25 -> 35`
+
+
 ## Question 9
 
 Implement a function `forEach(array: [Int], _ closure: Int -> ())` that takes an array of integers and a closure and runs the closure for each element of the array.
@@ -208,15 +236,37 @@ Output: `[5,10,15,12]`
 a) Write a function called `intsToStrings` that takes an array of Ints and a closure as parameters and returns an array of Strings. The closure should take an Int and return a String. The function should apply the closure to the ints in the array.
 
 `let theInts = [1, 2, 3, 44, 555, 6600, 10763]`
+```swift
+
+
+
+```
 
 b) Define a closure assigned to a constant called `asString` that just turns an Int to a String and pass it to `intsToStrings`.
+```swift
 
+
+
+```
 c) Define a closure assigned to a constant called `evenOdd` that returns "odd" or "even" if the Int is odd or even and pass it to `intsToStrings`.
+```swift
 
+
+
+```
 d) Define a closure assigned to a constant called `englishWords` that returns the written english word of each digit in an Int, 234 -> "two three four", and pass it to `intsToStrings`.
+```swift
+
+
+
+```
 
 e) Use the built in `map` method on `theInts` to recreate the answers for b, c and d.
+```swift
 
+
+
+```
 Example:
 Input:
 
@@ -232,12 +282,6 @@ Output:
 a) ["1", "2", "3", "44", "555", "6600", "10763"]
 b) ["odd", "even", "odd", "even", "odd", "even", "odd"]
 c) ["one ", "two ", "three ", "four four ", "five five five ", "six six zero zero ", "one zero seven six three "]
-```
-
-```swift
-
-
-
 ```
 ## Question 12
 
@@ -256,20 +300,24 @@ b) Sort `myArray` in descending order by defining the constant `descendingOrder`
 let mySecondSortedArray = myArray.sort(descendingOrder)
 let descendingOrder =
 ```
-```swift
 
-
-
-```
 
 ## Question 13
 
 `let arrayOfArrays = [[3,65,2,4],[25,3,1,6],[245,2,3,5,74]]`
 
 a) Sort `arrayOfArrays` in ascending order by the **3rd element** in each array. You can assume each array will have at least 3 elements.
+```swift
 
+
+
+```
 b) Sort `arrayOfArrays` in ascending order by the 3rd element in each array. Don't assume each array will have at least 3 elements. Put all arrays that have less than 3 elements at the end in any order.
+```swift
 
+
+
+```
 
 ## Question 14
 
@@ -351,15 +399,35 @@ Des Prez, Josquin
 a) Write a function called `myFilter` that takes an array of Doubles and a closure as parameters and returns an array of Doubles. The closure should take a Double and return a Bool. The function should apply the closure to the doubles in the array.
 
 `let theDoubles = [11.45, 3.2, 4.0, 5.67, 58.65, 66.0, 5.2, 5.0]`
+```swift
 
+
+
+```
 b) Define a closure assigned to a constant called `biggerThanTen` that takes a double and returns true if it is greater or equal to 10.0 and pass it to `myFilter`.
+```swift
 
+
+
+```
 c) Define a closure assigned to a constant called `wholeNumber` that takes a double and returns true if it is a whole number and pass it to `myFilter`.
+```swift
 
+
+
+```
 d) Define a closure assigned to a constant called `justEven` that takes a double and returns true if the number to the left of the point is even and pass it to `myFilter`.
+```swift
 
+
+
+```
 e. Use the built in filter method on `theDoubles` to recreate the answers for b, c and d.
+```swift
 
+
+
+```
 
 
 Example
